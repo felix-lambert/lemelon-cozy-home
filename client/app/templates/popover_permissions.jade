@@ -1,0 +1,9 @@
+.md-header.mt2=t('Once updated, this application will require the following permissions:')
+.md-body
+    div &nbsp;
+.md-footer.mt2
+    if model.state === 'broken'
+        a#confirmbtn.btn.right= t('confirm install')
+    else
+        a#confirmbtn.btn.right= t('confirm update')
+    a#cancelbtn.btn.light-btn.right= t('cancel')
